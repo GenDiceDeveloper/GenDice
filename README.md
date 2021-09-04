@@ -33,6 +33,7 @@ timeout (time) python gen.py --minnode MINNODE --maxnode MAXNODE --pickrate pick
 timeout (time) python gen.py --minnode MINNODE --maxnode MAXNODE --pickrate pickExisRate --file filename
 
 # write the results into excels 
+cd results
 python table.py --interval time_interval --total total_time --ispk (1 for experiment with baselines; 0 for experiment of pickrate) --paths (names of files need to be processed) --types (different approaches) --case (different settings of parameters) --iter 5
 #eg: 
 # python table.py --interval 30 --total 900 --ispk 0 --paths result_dice_e result_rand_e result_winc_e --types dice purerand winc --case _10_10_0.95 --iter 5

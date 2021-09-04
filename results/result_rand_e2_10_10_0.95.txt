@@ -1,0 +1,640 @@
+at time 15.069714663994091 
+generate 1 valid models out of 4941 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         19.57%    16.09%    0.2174    0.47%     0.2826    
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+0 0 0 0 1 0 0 0 0 0 0 1 0 2 1 0 0 0 1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0 0 0 1 1 0 0 0 0 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        9.0000    10.0000   1         13        4         2.5385    0.9000    0.1235    0.0047    0.1000    0.1111    
+I         10.0000   9.0000    10.0000   1.0000    13.0000   4.0000    2.5385    0.9000    0.1235    0.0047    0.1000    0.1111    
+
+at time 39.644722483993974 
+generate 2 valid models out of 13200 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         36.96%    31.74%    0.4130    0.80%     0.5000    
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+0 1 2 0 1 1 0 0 1 0 0 1 1 2 1 0 1 0 2 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 1 0 0 1 1 1 0 0 0 0 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        9.0000    7.0000    2         9         3         1.7778    0.9000    0.0864    0.0033    0.2000    0.2222    
+I         10.0000   9.0000    8.5000    1.5000    11.0000   3.5000    2.1581    0.9000    0.1049    0.0040    0.1500    0.1667    
+
+at time 42.129403237995575 
+generate 3 valid models out of 13987 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         43.48%    38.26%    0.5217    1.04%     0.7174    
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+0 1 2 0 1 2 0 0 1 0 0 1 1 2 2 0 2 0 3 0 0 0 0 1 0 0 0 1 1 0 0 0 1 0 0 0 1 0 0 1 1 2 0 3 0 0 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        8.0000    5.0000    4         7         3         2.0000    0.8000    0.0781    0.0024    0.4000    0.5000    
+I         10.0000   8.6667    7.3333    2.3333    9.6667    3.3333    2.1054    0.8667    0.0960    0.0035    0.2333    0.2778    
+
+at time 64.26389502299571 
+generate 4 valid models out of 21392 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         47.83%    42.61%    0.6087    1.28%     1.0217    
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+0 2 3 0 1 2 2 0 1 0 0 1 1 2 2 0 3 0 3 1 0 0 0 2 0 0 0 1 1 0 0 0 2 0 0 0 2 0 0 2 1 2 0 3 0 0 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        9.0000    5.0000    4         12        3         2.0833    0.9000    0.0617    0.0024    0.4000    0.4444    
+I         10.0000   8.7500    6.7500    2.7500    10.2500   3.2500    2.0999    0.8750    0.0874    0.0032    0.2750    0.3194    
+
+at time 72.5098331689951 
+generate 5 valid models out of 24289 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         54.35%    49.13%    0.7174    1.65%     1.3043    
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+0 3 3 0 1 3 3 0 1 0 0 2 1 3 2 1 3 0 3 2 0 0 0 3 0 0 0 1 1 0 0 0 2 0 1 0 2 0 0 2 1 2 1 3 0 0 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        10.0000   8.0000    2         6         4         2.6667    1.0000    0.0800    0.0038    0.2000    0.2000    
+I         10.0000   9.0000    7.0000    2.6000    9.4000    3.4000    2.2132    0.9000    0.0859    0.0033    0.2600    0.2956    
+
+at time 74.61060994399304 
+generate 6 valid models out of 25036 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         65.22%    58.70%    0.8261    2.08%     1.5435    
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+0 3 3 0 1 3 3 0 1 0 0 2 2 5 2 1 3 1 3 2 0 0 0 3 1 0 0 2 1 1 0 0 2 0 1 0 2 0 1 2 1 2 1 3 0 2 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        8.0000    9.0000    1         25        6         4.4800    0.8000    0.1406    0.0043    0.1000    0.1250    
+I         10.0000   8.8333    7.3333    2.3333    12.0000   3.8333    2.5910    0.8833    0.0951    0.0035    0.2333    0.2671    
+
+at time 77.62238450799487 
+generate 7 valid models out of 26049 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         69.57%    63.04%    0.9565    2.46%     1.8478    
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+0 3 4 0 1 3 3 0 1 0 0 3 3 6 2 1 3 1 3 3 0 0 1 3 1 0 0 2 1 1 0 0 2 0 1 0 2 0 1 4 2 2 1 3 1 2 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        9.0000    8.0000    3         8         5         2.1250    0.9000    0.0988    0.0038    0.3000    0.3333    
+I         10.0000   8.8571    7.4286    2.4286    11.4286   4.0000    2.5245    0.8857    0.0956    0.0035    0.2429    0.2766    
+
+at time 86.0263946749983 
+generate 8 valid models out of 28956 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         73.91%    66.09%    1.0652    2.84%     2.0435    
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+0 3 4 0 1 4 3 0 1 0 0 3 3 6 2 2 3 1 5 5 0 0 1 3 1 0 1 4 1 1 1 0 2 0 1 0 2 0 1 4 2 2 1 3 1 2 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        7.0000    8.0000    2         17        3         2.4706    0.7000    0.1633    0.0038    0.2000    0.2857    
+I         10.0000   8.6250    7.5000    2.3750    12.1250   3.8750    2.5177    0.8625    0.1040    0.0035    0.2375    0.2777    
+
+at time 114.13094494399411 
+generate 9 valid models out of 38921 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         76.09%    68.70%    1.1087    3.07%     2.3261    
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+0 3 4 0 1 5 3 0 1 0 0 3 3 6 2 3 3 1 5 6 1 0 1 3 1 0 1 4 1 1 1 0 2 0 2 0 3 0 1 5 3 3 1 4 1 2 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        10.0000   5.0000    5         9         3         1.7778    1.0000    0.0500    0.0024    0.5000    0.5000    
+I         10.0000   8.7778    7.2222    2.6667    11.7778   3.7778    2.4355    0.8778    0.0980    0.0034    0.2667    0.3024    
+
+at time 127.73372330799612 
+generate 10 valid models out of 43904 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         82.61%    75.22%    1.1957    3.26%     2.5870    
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+1 3 4 0 2 6 3 0 1 1 0 4 3 6 4 3 3 1 5 6 1 0 1 3 1 0 1 4 1 1 1 1 3 0 2 0 3 0 1 5 3 3 1 5 1 2 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        9.0000    4.0000    3         7         3         1.5714    0.9000    0.0494    0.0019    0.3000    0.3333    
+I         10.0000   8.8000    6.9000    2.7000    11.3000   3.7000    2.3491    0.8800    0.0932    0.0033    0.2700    0.3055    
+
+at time 137.6602096889983 
+generate 11 valid models out of 46965 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         82.61%    75.65%    1.2391    3.54%     2.8261    
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+2 3 5 0 3 7 3 0 1 2 0 4 3 6 4 4 3 1 5 7 1 0 1 4 1 0 1 4 1 2 1 1 3 0 2 0 3 0 1 5 3 3 1 5 1 3 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        10.0000   6.0000    3         9         3         1.8889    1.0000    0.0600    0.0028    0.3000    0.3000    
+I         10.0000   8.9091    6.8182    2.7273    11.0909   3.6364    2.3073    0.8909    0.0902    0.0032    0.2727    0.3050    
+
+at time 151.70766440399893 
+generate 12 valid models out of 51447 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         86.96%    80.00%    1.3043    3.73%     3.1087    
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+2 3 6 0 3 7 3 0 1 2 0 4 3 7 4 5 3 1 6 7 1 1 1 6 1 1 1 4 1 2 1 1 3 0 2 0 3 0 1 5 3 4 1 6 1 3 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        9.0000    6.0000    3         10        4         2.1000    0.9000    0.0741    0.0028    0.3000    0.3333    
+I         10.0000   8.9167    6.7500    2.7500    11.0000   3.6667    2.2900    0.8917    0.0888    0.0032    0.2750    0.3074    
+
+at time 174.93733663699823 
+generate 13 valid models out of 59393 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         86.96%    81.74%    1.4130    4.35%     3.2391    
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+2 3 8 0 4 7 3 0 1 2 0 4 3 7 4 5 3 1 7 7 1 1 2 7 1 1 3 4 3 2 1 1 3 0 2 0 3 0 1 5 3 4 1 6 1 3 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        7.0000    16.0000   1         54        7         5.4630    0.7000    0.3265    0.0076    0.1000    0.1429    
+I         10.0000   8.7692    7.4615    2.6154    14.3077   3.9231    2.5341    0.8769    0.1071    0.0035    0.2615    0.2947    
+
+at time 209.22957326199685 
+generate 14 valid models out of 69146 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         89.13%    83.91%    1.4565    4.68%     3.4565    
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+2 3 8 0 4 8 3 1 1 3 0 4 4 7 4 7 3 1 7 7 1 1 3 7 1 1 4 4 3 2 1 1 3 0 2 0 3 0 1 6 3 4 1 7 1 3 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        9.0000    8.0000    3         11        4         2.8182    0.9000    0.0988    0.0038    0.3000    0.3333    
+I         10.0000   8.7857    7.5000    2.6429    14.0714   3.9286    2.5544    0.8786    0.1065    0.0035    0.2643    0.2975    
+
+at time 212.62048470399895 
+generate 15 valid models out of 70223 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         91.30%    86.52%    1.5652    5.10%     3.6739    
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+2 3 8 1 5 8 3 1 1 3 0 6 4 8 4 7 3 1 7 7 2 1 3 7 3 1 5 5 3 2 1 1 3 0 2 0 3 0 1 6 3 4 1 7 1 3 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        8.0000    11.0000   3         35        5         3.7714    0.8000    0.1719    0.0052    0.3000    0.3750    
+I         10.0000   8.7333    7.7333    2.6667    15.4667   4.0000    2.6355    0.8733    0.1109    0.0037    0.2667    0.3026    
+
+at time 213.46342950399412 
+generate 16 valid models out of 70494 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         91.30%    86.52%    1.5870    5.29%     3.8696    
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+3 3 8 1 5 8 3 1 1 3 0 6 5 9 4 7 3 1 9 7 2 2 3 7 3 1 5 5 3 2 1 1 3 0 2 0 3 0 1 7 4 4 2 7 1 4 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        9.0000    4.0000    3         7         2         1.5714    0.9000    0.0494    0.0019    0.3000    0.3333    
+I         10.0000   8.7500    7.5000    2.6875    14.9375   3.8750    2.5690    0.8750    0.1070    0.0035    0.2687    0.3046    
+
+at time 282.13020991899975 
+generate 17 valid models out of 87153 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         93.48%    89.13%    1.6522    5.62%     4.1739    
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+3 3 8 1 5 8 3 2 1 4 1 7 5 9 4 7 3 2 9 7 2 2 3 7 3 1 5 6 3 2 1 1 3 0 2 0 3 0 2 7 4 6 3 7 1 4 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        9.0000    7.0000    3         8         5         2.5000    0.9000    0.0864    0.0033    0.3000    0.3333    
+I         10.0000   8.7647    7.4706    2.7059    14.5294   3.9412    2.5649    0.8765    0.1058    0.0035    0.2706    0.3063    
+
+at time 288.2780359679964 
+generate 18 valid models out of 88565 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         93.48%    89.13%    1.6957    6.05%     4.4130    
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+3 3 8 1 5 8 3 2 1 5 1 9 5 10 5 8 3 2 9 8 2 2 3 7 4 1 5 6 3 3 1 1 3 0 2 0 3 0 2 7 5 6 3 7 1 4 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        9.0000    10.0000   2         9         6         2.8889    0.9000    0.1235    0.0047    0.2000    0.2222    
+I         10.0000   8.7778    7.6111    2.6667    14.2222   4.0556    2.5829    0.8778    0.1068    0.0036    0.2667    0.3016    
+
+at time 315.4526719409987 
+generate 19 valid models out of 96085 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         93.48%    89.57%    1.7391    6.38%     4.6087    
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+3 3 8 1 5 9 3 2 2 5 1 9 5 11 6 9 3 2 9 8 2 2 3 7 6 1 5 6 3 5 1 1 3 0 2 0 3 0 2 7 5 6 4 7 1 4 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        8.0000    8.0000    2         10        5         2.8000    0.8000    0.1250    0.0038    0.2000    0.2500    
+I         10.0000   8.7368    7.6316    2.6316    14.0000   4.1053    2.5944    0.8737    0.1078    0.0036    0.2632    0.2989    
+
+at time 319.6254310899967 
+generate 20 valid models out of 97632 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         93.48%    89.57%    1.7609    6.71%     4.8261    
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+3 3 8 1 5 10 3 3 2 6 1 9 5 11 7 9 3 2 9 8 2 2 3 7 6 1 6 7 3 5 1 1 3 0 2 0 3 0 2 7 6 6 4 8 1 6 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        9.0000    7.0000    4         7         4         2.1429    0.9000    0.0864    0.0033    0.4000    0.4444    
+I         10.0000   8.7500    7.6000    2.7000    13.6500   4.1000    2.5718    0.8750    0.1067    0.0036    0.2700    0.3062    
+
+at time 322.1684650279931 
+generate 21 valid models out of 98584 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         95.65%    91.74%    1.8043    6.95%     5.0870    
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+3 3 8 1 6 11 3 3 2 6 1 9 6 12 7 9 3 2 10 8 2 2 3 7 6 2 7 7 3 5 1 1 3 0 2 0 3 1 2 7 7 7 4 8 1 6 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        10.0000   7.0000    3         8         4         2.2500    1.0000    0.0700    0.0033    0.3000    0.3000    
+I         10.0000   8.8095    7.5714    2.7143    13.3810   4.0952    2.5565    0.8810    0.1049    0.0036    0.2714    0.3059    
+
+at time 326.31839303199376 
+generate 22 valid models out of 100135 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         95.65%    92.17%    1.8261    7.42%     5.3261    
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+3 3 9 2 6 11 3 3 3 7 1 10 6 12 8 9 3 2 10 8 2 2 3 7 6 3 7 8 3 6 1 1 3 0 2 0 3 1 2 8 7 7 4 8 1 6 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        10.0000   11.0000   2         11        4         2.4545    1.0000    0.1100    0.0052    0.2000    0.2000    
+I         10.0000   8.8636    7.7273    2.6818    13.2727   4.0909    2.5518    0.8864    0.1052    0.0037    0.2682    0.3010    
+
+at time 332.31044570199447 
+generate 23 valid models out of 102306 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         95.65%    92.17%    1.8478    7.61%     5.5652    
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+3 3 9 2 7 11 4 3 3 8 1 10 6 12 8 10 3 2 10 10 2 2 3 7 6 3 7 8 3 6 1 2 3 0 2 0 3 1 2 8 8 7 4 10 1 6 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        8.0000    4.0000    2         6         3         1.6667    0.8000    0.0625    0.0019    0.2000    0.2500    
+I         10.0000   8.8261    7.5652    2.6522    12.9565   4.0435    2.5133    0.8826    0.1033    0.0036    0.2652    0.2988    
+
+at time 350.09555913499935 
+generate 24 valid models out of 108914 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         95.65%    92.17%    1.8696    7.99%     5.8043    
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+3 3 9 2 7 11 4 3 3 8 2 10 7 12 8 11 4 2 10 10 2 3 3 8 6 4 7 8 4 6 1 2 3 0 2 0 3 2 2 8 9 7 4 10 1 6 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        10.0000   8.0000    3         11        4         2.9091    1.0000    0.0800    0.0038    0.3000    0.3000    
+I         10.0000   8.8750    7.5833    2.6667    12.8750   4.0417    2.5298    0.8875    0.1023    0.0036    0.2667    0.2989    
+
+at time 351.1868359229993 
+generate 25 valid models out of 109349 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         95.65%    92.17%    1.9130    8.32%     5.9565    
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+3 4 9 2 7 11 4 4 5 8 4 10 7 14 8 11 4 2 11 10 2 3 3 8 6 4 8 8 4 6 1 2 3 0 2 0 3 2 2 8 9 7 4 10 1 6 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        7.0000    7.0000    1         7         4         2.1429    0.7000    0.1429    0.0033    0.1000    0.1429    
+I         10.0000   8.8000    7.5600    2.6000    12.6400   4.0400    2.5144    0.8800    0.1040    0.0036    0.2600    0.2926    
+
+at time 354.9001512029936 
+generate 26 valid models out of 110739 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         95.65%    92.17%    1.9565    8.70%     6.1739    
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+3 4 9 3 8 11 5 4 5 8 4 10 7 14 8 12 5 2 11 12 2 3 3 8 6 4 8 9 4 6 1 2 3 0 2 0 3 2 3 8 9 7 4 11 1 6 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        9.0000    8.0000    1         21        4         2.5714    0.9000    0.0988    0.0038    0.1000    0.1111    
+I         10.0000   8.8077    7.5769    2.5385    12.9615   4.0385    2.5165    0.8808    0.1038    0.0036    0.2538    0.2857    
+
+at time 359.2647689709993 
+generate 27 valid models out of 112347 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         95.65%    92.17%    2.0000    9.12%     6.4130    
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+3 5 9 3 8 11 5 4 5 9 4 11 7 14 8 13 5 2 11 12 2 3 3 9 6 4 8 10 4 6 1 2 3 0 3 0 3 2 4 9 10 7 4 11 1 6 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        10.0000   10.0000   1         10        4         2.6000    1.0000    0.1000    0.0047    0.1000    0.1000    
+I         10.0000   8.8519    7.6667    2.4815    12.8519   4.0370    2.5196    0.8852    0.1036    0.0036    0.2481    0.2788    
+
+at time 378.6950883279933 
+generate 28 valid models out of 118485 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         95.65%    92.61%    2.0000    9.40%     6.5652    
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+3 5 9 3 8 11 6 4 6 9 8 11 7 14 8 14 5 2 11 12 2 3 3 9 6 4 8 10 4 6 1 2 3 0 3 0 4 2 4 10 11 7 4 11 1 6 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        7.0000    7.0000    1         6         4         3.0000    0.7000    0.1429    0.0033    0.1000    0.1429    
+I         10.0000   8.7857    7.6429    2.4286    12.6071   4.0357    2.5368    0.8786    0.1050    0.0036    0.2429    0.2739    
+
+at time 379.77750305999507 
+generate 29 valid models out of 118873 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         95.65%    92.61%    2.0217    9.64%     6.8043    
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+3 5 10 3 8 11 6 4 8 9 8 12 7 14 8 14 5 2 11 12 2 3 3 9 7 4 10 10 4 6 1 3 4 0 3 0 4 2 4 10 11 7 4 11 2 6 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        8.0000    6.0000    2         12        4         2.0833    0.8000    0.0938    0.0028    0.2000    0.2500    
+I         10.0000   8.7586    7.5862    2.4138    12.5862   4.0345    2.5212    0.8759    0.1046    0.0036    0.2414    0.2731    
+
+at time 382.2539219429964 
+generate 30 valid models out of 119631 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         95.65%    92.61%    2.0652    9.83%     7.0217    
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+4 5 10 3 8 11 6 4 8 9 9 13 7 15 8 14 5 3 11 12 2 3 3 10 8 4 10 10 5 6 1 3 4 0 3 0 5 2 4 10 11 7 4 11 3 6 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        10.0000   5.0000    2         28        4         2.7500    1.0000    0.0500    0.0024    0.2000    0.2000    
+I         10.0000   8.8000    7.5000    2.4000    13.1000   4.0333    2.5288    0.8800    0.1028    0.0035    0.2400    0.2707    
+
+at time 390.39279653799895 
+generate 31 valid models out of 122349 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         95.65%    92.61%    2.0652    10.16%    7.2826    
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+5 6 10 3 9 11 6 5 8 9 9 13 7 15 9 14 7 3 11 12 2 3 3 10 8 4 10 10 5 6 1 5 4 0 3 0 5 2 4 10 11 7 4 12 3 6 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        8.0000    7.0000    3         5         4         2.8000    0.8000    0.1094    0.0033    0.3000    0.3750    
+I         10.0000   8.7742    7.4839    2.4194    12.8387   4.0323    2.5375    0.8774    0.1030    0.0035    0.2419    0.2740    
+
+at time 394.54842826399545 
+generate 32 valid models out of 123792 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         95.65%    93.04%    2.1087    10.78%    7.5652    
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+5 6 10 3 10 11 6 6 8 10 9 13 7 15 10 14 7 4 11 12 2 3 4 10 9 4 10 11 5 7 1 5 4 0 3 0 5 2 4 10 11 7 4 13 3 6 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        10.0000   16.0000   2         17        6         4.0588    1.0000    0.1600    0.0076    0.2000    0.2000    
+I         10.0000   8.8125    7.7500    2.4062    12.9688   4.0938    2.5851    0.8812    0.1048    0.0037    0.2406    0.2717    
+
+at time 410.60655709199636 
+generate 33 valid models out of 129461 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         95.65%    93.48%    2.1304    10.87%    7.8261    
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+5 6 10 3 10 11 6 6 9 10 9 15 8 15 10 14 7 4 11 12 3 4 4 10 9 4 10 12 6 7 1 5 4 0 3 0 5 2 5 10 11 8 4 13 3 6 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        9.0000    5.0000    3         11        3         1.8182    0.9000    0.0617    0.0024    0.3000    0.3333    
+I         10.0000   8.8182    7.6667    2.4242    12.9091   4.0606    2.5618    0.8818    0.1035    0.0036    0.2424    0.2736    
+
+at time 429.1260101509979 
+generate 34 valid models out of 135857 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         95.65%    93.48%    2.1304    11.11%    8.0217    
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+5 6 10 3 10 12 6 6 10 10 9 15 10 15 10 14 8 4 11 12 3 4 4 10 9 4 10 13 6 7 1 5 4 0 3 0 5 2 6 10 11 8 5 14 3 7 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        9.0000    6.0000    2         8         4         2.8750    0.9000    0.0741    0.0028    0.2000    0.2222    
+I         10.0000   8.8235    7.6176    2.4118    12.7647   4.0588    2.5710    0.8824    0.1026    0.0036    0.2412    0.2721    
+
+at time 448.3756094979981 
+generate 35 valid models out of 141363 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         95.65%    93.48%    2.1522    11.58%    8.2391    
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+5 6 11 4 10 12 6 6 10 10 9 15 10 17 10 14 8 4 11 12 4 4 4 10 9 4 11 13 8 7 1 6 4 0 3 0 5 2 6 10 11 8 5 14 3 8 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        8.0000    13.0000   2         30        6         4.4667    0.8000    0.2031    0.0061    0.2000    0.2500    
+I         10.0000   8.8000    7.7714    2.4000    13.2571   4.1143    2.6252    0.8800    0.1055    0.0037    0.2400    0.2714    
+
+at time 451.18217101099435 
+generate 36 valid models out of 142228 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         95.65%    93.48%    2.1957    11.77%    8.4348    
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+6 6 11 4 10 12 7 7 10 10 10 15 10 17 10 15 8 4 11 12 4 4 4 10 9 4 11 15 8 8 1 6 4 0 3 0 5 2 6 10 11 8 5 14 3 10 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        8.0000    8.0000    2         18        3         2.2778    0.8000    0.1250    0.0038    0.2000    0.2500    
+I         10.0000   8.7778    7.7778    2.3889    13.3889   4.0833    2.6156    0.8778    0.1060    0.0037    0.2389    0.2708    
+
+at time 456.0521952929994 
+generate 37 valid models out of 143763 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         95.65%    93.48%    2.2609    12.19%    8.6304    
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+7 6 11 4 10 12 8 8 11 10 10 17 10 17 10 15 8 4 11 12 5 4 4 10 9 5 11 15 8 8 2 6 4 0 3 0 5 2 6 10 12 8 5 14 3 10 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        9.0000    10.0000   2         7         6         4.1429    0.9000    0.1235    0.0047    0.2000    0.2222    
+I         10.0000   8.7838    7.8378    2.3784    13.2162   4.1351    2.6568    0.8784    0.1065    0.0037    0.2378    0.2695    
+
+at time 462.78393076499924 
+generate 38 valid models out of 145815 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         95.65%    93.48%    2.2826    12.48%    8.8696    
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+7 6 11 4 10 12 8 8 11 10 10 18 10 17 10 15 8 4 11 13 6 4 5 10 10 7 11 15 9 8 2 6 4 0 3 0 5 2 6 10 13 8 6 14 3 10 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        9.0000    9.0000    2         27        6         3.4815    0.9000    0.1111    0.0043    0.2000    0.2222    
+I         10.0000   8.7895    7.8684    2.3684    13.5789   4.1842    2.6785    0.8789    0.1066    0.0037    0.2368    0.2683    
+
+at time 476.2301560049964 
+generate 39 valid models out of 149529 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         95.65%    93.48%    2.3261    12.90%    9.0870    
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+7 6 11 4 10 12 8 9 11 11 10 18 10 17 10 15 8 4 11 14 7 4 5 10 10 7 11 15 10 9 2 6 4 0 4 0 5 2 7 10 13 9 6 14 3 11 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        10.0000   10.0000   1         47        5         3.8723    1.0000    0.1000    0.0047    0.1000    0.1000    
+I         10.0000   8.8205    7.9231    2.3333    14.4359   4.2051    2.7091    0.8821    0.1065    0.0037    0.2333    0.2640    
+
+at time 490.6611297299969 
+generate 40 valid models out of 152976 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         95.65%    93.48%    2.3478    13.09%    9.2826    
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+8 6 11 4 11 12 8 9 11 13 12 18 10 17 10 15 9 4 12 15 7 4 5 10 10 7 11 15 10 9 2 6 4 0 4 0 5 2 7 10 13 9 6 14 4 11 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        8.0000    5.0000    3         7         2         1.7143    0.8000    0.0781    0.0024    0.3000    0.3750    
+I         10.0000   8.8000    7.8500    2.3500    14.2500   4.1500    2.6843    0.8800    0.1058    0.0037    0.2350    0.2667    
+
+at time 495.0302944599971 
+generate 41 valid models out of 153728 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         95.65%    93.48%    2.4130    13.42%    9.4783    
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+8 6 11 5 11 12 8 9 12 15 12 18 11 17 10 15 9 5 12 15 7 4 5 11 10 7 11 15 10 10 2 6 4 0 4 0 5 2 8 10 13 9 6 14 5 11 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        9.0000    7.0000    2         14        3         2.1429    0.9000    0.0864    0.0033    0.2000    0.2222    
+I         10.0000   8.8049    7.8293    2.3415    14.2439   4.1220    2.6711    0.8805    0.1053    0.0037    0.2341    0.2657    
+
+at time 533.4332822649958 
+generate 42 valid models out of 163730 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         95.65%    93.48%    2.4130    13.66%    9.6957    
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+8 7 12 5 11 12 8 12 12 15 12 18 11 17 11 16 9 5 13 15 7 4 5 11 10 7 11 15 10 10 2 6 4 0 4 0 5 2 8 10 14 10 6 14 5 11 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        8.0000    5.0000    3         6         3         1.8333    0.8000    0.0781    0.0024    0.3000    0.3750    
+I         10.0000   8.7857    7.7619    2.3571    14.0476   4.0952    2.6511    0.8786    0.1046    0.0037    0.2357    0.2683    
+
+at time 540.2018346439945 
+generate 43 valid models out of 165347 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         95.65%    93.91%    2.4348    13.85%    10.0217   
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+8 7 12 5 11 12 8 12 12 15 12 19 11 18 11 16 9 5 13 15 7 4 5 11 10 8 12 15 11 11 2 6 4 0 4 0 5 2 8 10 15 10 7 15 6 11 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        10.0000   7.0000    4         28        4         2.6786    1.0000    0.0700    0.0033    0.4000    0.4000    
+I         10.0000   8.8140    7.7442    2.3953    14.3721   4.0930    2.6518    0.8814    0.1038    0.0037    0.2395    0.2713    
+
+at time 563.1434651959935 
+generate 44 valid models out of 170974 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         95.65%    93.91%    2.4565    14.13%    10.2391   
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+9 7 12 5 11 12 8 13 13 15 12 19 12 18 11 16 10 6 13 15 7 4 5 11 11 8 12 15 11 11 2 6 4 0 4 0 5 2 8 11 15 10 8 15 6 12 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        10.0000   7.0000    3         6         5         2.3333    1.0000    0.0700    0.0033    0.3000    0.3000    
+I         10.0000   8.8409    7.7273    2.4091    14.1818   4.1136    2.6445    0.8841    0.1031    0.0037    0.2409    0.2720    
+
+at time 572.5693615389973 
+generate 45 valid models out of 173684 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         95.65%    93.91%    2.5000    14.37%    10.4783   
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+9 7 12 6 11 12 8 13 13 16 12 19 12 18 11 16 11 6 13 16 8 4 5 11 11 9 12 15 11 11 2 6 4 0 5 0 5 2 8 12 15 10 9 16 6 12 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        10.0000   8.0000    2         7         5         3.0000    1.0000    0.0800    0.0038    0.2000    0.2000    
+I         10.0000   8.8667    7.7333    2.4000    14.0222   4.1333    2.6524    0.8867    0.1026    0.0037    0.2400    0.2704    
+
+at time 572.759395422996 
+generate 46 valid models out of 173747 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         95.65%    93.91%    2.5217    14.74%    10.7174   
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+11 7 12 7 12 12 8 13 13 16 12 19 12 19 11 16 11 6 13 16 8 4 5 12 12 9 12 15 11 11 2 6 5 0 5 0 5 2 8 12 15 10 9 17 7 12 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        9.0000    8.0000    1         12        4         2.7500    0.9000    0.0988    0.0038    0.1000    0.1111    
+I         10.0000   8.8696    7.7391    2.3696    13.9783   4.1304    2.6545    0.8870    0.1025    0.0037    0.2370    0.2669    
+
+at time 595.4869562749955 
+generate 47 valid models out of 181291 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         95.65%    94.35%    2.5217    15.12%    10.9783   
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+11 7 13 7 13 12 8 13 13 16 12 20 12 19 12 16 11 6 13 17 8 4 5 12 12 9 12 15 11 11 2 7 5 0 5 0 6 2 8 13 15 11 9 17 7 13 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        10.0000   9.0000    3         9         4         2.2222    1.0000    0.0900    0.0043    0.3000    0.3000    
+I         10.0000   8.8936    7.7660    2.3830    13.8723   4.1277    2.6453    0.8894    0.1022    0.0037    0.2383    0.2676    
+
+at time 606.317667888994 
+generate 48 valid models out of 185252 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         95.65%    94.35%    2.5652    15.60%    11.2391   
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+11 7 13 8 13 12 8 13 13 16 12 20 13 19 13 17 11 6 14 17 8 4 5 12 13 10 12 15 12 11 2 7 5 0 6 0 6 2 8 13 15 12 9 17 7 13 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        10.0000   12.0000   2         12        4         2.6667    1.0000    0.1200    0.0057    0.2000    0.2000    
+I         10.0000   8.9167    7.8542    2.3750    13.8333   4.1250    2.6458    0.8917    0.1026    0.0037    0.2375    0.2662    
+
+at time 630.9885862209994 
+generate 49 valid models out of 194375 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         95.65%    94.35%    2.5870    15.88%    11.4348   
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+11 7 13 8 13 13 9 13 13 16 14 20 13 21 13 18 11 6 14 18 8 4 5 12 13 10 12 15 12 11 2 7 5 0 6 0 6 2 8 13 15 12 10 17 7 14 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        8.0000    6.0000    3         5         4         2.2000    0.8000    0.0938    0.0028    0.3000    0.3750    
+I         10.0000   8.8980    7.8163    2.3878    13.6531   4.1224    2.6367    0.8898    0.1024    0.0037    0.2388    0.2684    
+
+at time 658.1555135259987 
+generate 50 valid models out of 203577 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         95.65%    94.35%    2.5870    16.12%    11.5870   
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+12 8 14 10 14 13 11 13 13 16 14 20 13 21 13 18 12 6 14 18 8 5 5 12 13 10 12 15 12 11 2 7 5 0 6 0 6 2 8 13 15 12 10 17 7 14 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        8.0000    5.0000    1         5         4         2.2000    0.8000    0.0781    0.0024    0.1000    0.1250    
+I         10.0000   8.8800    7.7600    2.3600    13.4800   4.1200    2.6280    0.8880    0.1019    0.0037    0.2360    0.2656    
+
+at time 661.1723907269989 
+generate 51 valid models out of 204479 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         95.65%    94.35%    2.6087    16.45%    11.8261   
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+12 8 15 10 14 13 11 13 14 17 14 20 14 21 13 18 13 6 15 18 8 5 5 12 13 10 13 15 12 11 2 7 5 0 6 0 6 2 8 13 15 12 10 18 9 14 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        9.0000    9.0000    2         7         3         2.4286    0.9000    0.1111    0.0043    0.2000    0.2222    
+I         10.0000   8.8824    7.7843    2.3529    13.3529   4.0980    2.6241    0.8882    0.1021    0.0037    0.2353    0.2647    
+
+at time 664.9301804199931 
+generate 52 valid models out of 205731 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         95.65%    94.35%    2.6522    16.82%    11.9565   
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+12 8 15 10 14 14 12 14 14 17 15 20 14 21 13 18 13 7 15 18 8 5 6 12 14 10 13 16 13 12 2 7 5 0 6 0 6 2 8 13 15 12 10 18 9 14 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        10.0000   13.0000   2         23        5         3.0870    1.0000    0.1300    0.0061    0.2000    0.2000    
+I         10.0000   8.9038    7.8846    2.3462    13.5385   4.1154    2.6330    0.8904    0.1026    0.0037    0.2346    0.2635    
+
+at time 679.9552594579945 
+generate 53 valid models out of 210893 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         95.65%    94.78%    2.6739    17.11%    12.1957   
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+12 9 16 10 14 14 12 14 14 18 16 22 14 21 13 18 13 7 15 18 8 5 6 13 14 10 13 16 13 12 2 7 5 0 6 0 7 2 8 14 16 12 10 18 9 14 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        9.0000    11.0000   3         8         4         3.5000    0.9000    0.1358    0.0052    0.3000    0.3333    
+I         10.0000   8.9057    7.9434    2.3585    13.4340   4.1132    2.6493    0.8906    0.1033    0.0038    0.2358    0.2648    
+
+at time 703.7339283639958 
+generate 54 valid models out of 218858 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         95.65%    94.78%    2.6957    17.39%    12.4565   
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+12 9 16 10 14 14 13 14 15 18 16 22 14 21 13 18 13 7 15 18 8 5 7 14 14 10 13 16 13 12 3 7 5 0 6 0 7 3 9 14 16 12 10 18 12 14 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        8.0000    7.0000    2         8         4         2.5000    0.8000    0.1094    0.0033    0.2000    0.2500    
+I         10.0000   8.8889    7.9259    2.3519    13.3333   4.1111    2.6465    0.8889    0.1034    0.0037    0.2352    0.2645    
+
+at time 746.262083955 
+generate 55 valid models out of 232966 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         95.65%    94.78%    2.6957    17.67%    12.7391   
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+13 9 16 10 14 14 13 14 15 18 16 22 14 22 13 18 13 7 15 18 8 5 7 14 14 10 13 16 13 13 4 8 5 0 8 0 7 3 10 14 16 13 10 19 12 14 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        9.0000    8.0000    4         9         5         2.3333    0.9000    0.0988    0.0038    0.4000    0.4444    
+I         10.0000   8.8909    7.9273    2.3818    13.2545   4.1273    2.6409    0.8891    0.1033    0.0037    0.2382    0.2678    
+
+at time 762.4161263689966 
+generate 56 valid models out of 238537 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         95.65%    94.78%    2.6957    17.96%    12.9783   
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+13 9 18 10 14 15 13 14 15 18 16 22 14 23 13 19 13 7 15 18 8 5 7 15 14 11 13 16 13 14 4 8 6 0 8 0 7 3 10 14 16 13 10 19 12 15 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        9.0000    9.0000    3         11        4         3.0909    0.9000    0.1111    0.0043    0.3000    0.3333    
+I         10.0000   8.8929    7.9464    2.3929    13.2143   4.1250    2.6489    0.8893    0.1034    0.0038    0.2393    0.2690    
+
+at time 766.8168153719962 
+generate 57 valid models out of 240048 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         95.65%    94.78%    2.6957    18.19%    13.2174   
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+15 9 19 10 14 15 14 14 16 18 16 22 14 23 13 19 14 7 16 18 8 6 7 15 14 12 13 16 13 14 4 8 6 0 8 0 7 3 10 14 16 13 11 19 12 15 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        9.0000    6.0000    4         7         3         2.2857    0.9000    0.0741    0.0028    0.4000    0.4444    
+I         10.0000   8.8947    7.9123    2.4211    13.1053   4.1053    2.6425    0.8895    0.1029    0.0037    0.2421    0.2720    
+
+at time 786.7773285429939 
+generate 58 valid models out of 246822 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         95.65%    94.78%    2.7174    18.57%    13.4348   
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+15 9 20 11 15 15 14 14 16 18 16 23 16 23 13 19 14 7 16 18 9 6 7 15 14 13 14 16 13 14 4 8 6 0 8 0 7 3 10 14 16 13 12 19 12 15 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        9.0000    9.0000    2         9         4         2.3333    0.9000    0.1111    0.0043    0.2000    0.2222    
+I         10.0000   8.8966    7.9310    2.4138    13.0345   4.1034    2.6372    0.8897    0.1031    0.0037    0.2414    0.2712    
+
+at time 840.3317367379932 
+generate 59 valid models out of 264564 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         95.65%    94.78%    2.7391    18.71%    13.6957   
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+15 10 20 11 15 15 15 14 18 18 16 23 16 23 13 20 14 7 16 18 9 6 7 16 15 15 14 16 13 14 4 8 6 0 8 0 7 3 11 14 16 13 12 19 12 15 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        8.0000    7.0000    3         11        3         1.9091    0.8000    0.1094    0.0033    0.3000    0.3750    
+I         10.0000   8.8814    7.9153    2.4237    13.0000   4.0847    2.6248    0.8881    0.1032    0.0037    0.2424    0.2729    
+
+at time 840.593459109994 
+generate 60 valid models out of 264662 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         95.65%    94.78%    2.7391    18.86%    13.8261   
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+15 11 20 11 16 15 15 14 19 18 16 23 18 24 13 20 14 8 17 18 9 6 7 16 15 15 14 16 13 14 4 8 6 0 8 0 7 3 11 14 16 13 12 20 13 15 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        9.0000    5.0000    4         5         4         2.0000    0.9000    0.0617    0.0024    0.4000    0.4444    
+I         10.0000   8.8833    7.8667    2.4500    12.8667   4.0833    2.6144    0.8883    0.1025    0.0037    0.2450    0.2758    
+
+at time 858.8370562779965 
+generate 61 valid models out of 270864 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         95.65%    94.78%    2.7391    19.09%    14.0435   
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+16 11 20 11 16 15 15 14 19 18 17 23 18 24 13 20 14 8 17 19 9 6 7 16 17 15 14 16 13 14 4 9 6 0 8 0 7 3 11 14 18 13 13 20 14 15 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        8.0000    6.0000    4         8         4         2.0000    0.8000    0.0938    0.0028    0.4000    0.5000    
+I         10.0000   8.8689    7.8361    2.4754    12.7869   4.0820    2.6044    0.8869    0.1023    0.0037    0.2475    0.2795    
+
+at time 877.1106584809968 
+generate 62 valid models out of 276811 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         95.65%    94.78%    2.7391    19.47%    14.2609   
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+17 12 20 12 16 15 15 14 20 19 17 24 18 25 13 20 14 8 17 20 9 6 7 16 17 15 14 16 13 14 4 9 6 0 9 0 7 3 11 14 19 13 13 20 14 15 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        10.0000   9.0000    2         6         5         3.6667    1.0000    0.0900    0.0043    0.2000    0.2000    
+I         10.0000   8.8871    7.8548    2.4677    12.6774   4.0968    2.6215    0.8887    0.1021    0.0037    0.2468    0.2782    
+
+at time 884.9338723289984 
+generate 63 valid models out of 279504 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         95.65%    94.78%    2.7391    19.75%    14.4783   
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+18 12 21 12 16 16 16 14 20 20 17 24 18 25 14 20 14 8 17 20 10 6 7 16 17 16 14 16 13 14 4 9 6 0 10 0 7 3 11 14 19 13 13 20 15 15 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        10.0000   6.0000    2         12        4         2.3333    1.0000    0.0600    0.0028    0.2000    0.2000    
+I         10.0000   8.9048    7.8254    2.4603    12.6667   4.0952    2.6169    0.8905    0.1015    0.0037    0.2460    0.2769    
+
+at time 892.4902508399973 
+generate 64 valid models out of 281963 models
+Object    OTC       IDC       ODC       SEC       SPC       
+I         95.65%    94.78%    2.7391    19.99%    14.6522   
+Identity Abs Neg Reciprocal Floor Ceil Round Erf Sign Exp Softsign Softmax Sigmoid HardSigmoid Relu LeakyRelu Selu Sin Cos Sqrt PRelu Flatten Add Sub Mul Div Sum Max Min Mean MaxPool AveragePool LpPool Conv MatMul Gemm Concat SpaceToDepth ReduceMax ReduceMean ReduceMin ReduceProd ReduceSumSquare ReduceL1 ReduceL2 ReduceLogSumExp 
+18 12 21 12 17 17 16 14 20 21 17 24 18 25 14 23 14 8 18 20 11 6 7 16 17 16 14 16 13 14 4 9 6 0 10 0 7 3 12 14 19 13 13 20 15 16 
+Object    NOO       NOT       NOP       NSP        NTP      MLP       ALP       OTR1      OPR1      OPR2      NSP1      NSP2      
+g         10        8.0000    6.0000    2         7         3         1.8571    0.8000    0.0938    0.0028    0.2000    0.2500    
+I         10.0000   8.8906    7.7969    2.4531    12.5781   4.0781    2.6050    0.8891    0.1013    0.0037    0.2453    0.2765    
+

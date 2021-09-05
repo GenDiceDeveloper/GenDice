@@ -73,7 +73,7 @@ def work():
 			  'Flatten'
 			  ]
 	id_ops += ['Round']
-	# TODO(MaxUnpool)
+
 	id_ops.append('Exp')
 	id_ops.append('Selu')
 	id_ops.append('Sqrt')
@@ -84,7 +84,7 @@ def work():
 
 	extra_t_ops += ['Conv']
 
-	multi_extra_t_ops = ['Sum', 'Max', 'Min', 'Mean'] # TODO(support multi inputs >=3)
+	multi_extra_t_ops = ['Sum', 'Max', 'Min', 'Mean']
 	extra_t_ops += multi_extra_t_ops
 
 	reduce_ops = ["ReduceMax", "ReduceMean", "ReduceMin", "ReduceProd", "ReduceSumSquare", \

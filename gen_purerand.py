@@ -455,7 +455,7 @@ while True:
 		# err_num+=1
 		continue
 
-print('This is gen_purerand.py!\n')
+
 """
 for iter in range(ITER_NUM):	
 	try:

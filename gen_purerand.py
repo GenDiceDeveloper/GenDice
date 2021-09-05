@@ -74,7 +74,7 @@ def work():
 
 			  ]
 	id_ops += ['Round']
-	# TODO(MaxUnpool)
+
 	id_ops.append('Exp')
 	id_ops.append('Selu')
 	id_ops.append('Sqrt') 
@@ -85,7 +85,7 @@ def work():
 
 	extra_t_ops += ['Conv']
 
-	multi_extra_t_ops = ['Sum', 'Max', 'Min', 'Mean'] # TODO(support multi inputs >=3)
+	multi_extra_t_ops = ['Sum', 'Max', 'Min', 'Mean']
 	extra_t_ops += multi_extra_t_ops
 
 	reduce_ops = ["ReduceMax", "ReduceMean", "ReduceMin", "ReduceProd", "ReduceSumSquare", \
@@ -454,14 +454,6 @@ while True:
 		# print("num-" + str(err_num) + " ERR=", err_m)
 		# err_num+=1
 		continue
-		'''
-				if 'ONNXRuntimeError' in err_m:
-					continue
-				if ('TVMError' in err_m) and ('Check failed' in err_m):
-					continue
-				if 'Non-zero' in err_m:
-					continue
-				print("ERR=", err_m)'''
 
 print('This is gen_purerand.py!\n')
 """

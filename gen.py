@@ -567,7 +567,6 @@ while True:
 	f.close()
 	iter += 1
 
-print('This is gen.py!\n')
 
 
 """

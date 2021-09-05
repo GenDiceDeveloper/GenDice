@@ -64,11 +64,11 @@ To better present the efficiency of our generated models, we draw different metr
 
 ## Experiments and Results
 
-We conducted 3 experiments to evaluate the efficiency of our approach, comparing with two baselines. Also, we run 1 experiment to compare the results of different values of the parameter *pickTensorThreshold*. 
+We conducted 3 experiments to evaluate the efficiency of GenDice, comparing with two baselines. Also, we run 1 experiment to compare the results of different values of the parameter *pickTensorThreshold*. 
 
-**baselines**: The first baseline is purely random generation, whose relative results have a name of 'purerand'. The second baseline is also based on random generation but with incremental generation, whose relative results have a name of 'withinc'/'winc'. The results of our approach have a name of 'dice'.
+**baselines**: The first baseline is purely random generation, whose relative results have a name of 'purerand'. The second baseline is also based on random generation but with incremental generation, whose relative results have a name of 'withinc'/'winc'. The results of GenDice have a name of 'dice'.
 
-**common settings**: For each of the experiments, we set a fixed time limitation as 15 minutes and run our approach and baselines (or other settings of *pickTensorThreshold*) separately. We measure the results based on the metrics we raised. 
+**common settings**: For each of the experiments, we set a fixed time limitation as 15 minutes and run GenDice and baselines (or other settings of *pickTensorThreshold*) separately. We measure the results based on the metrics we raised. 
 
 ### #1. Generate models of multiple sizes in a fixed time duration, compared with other baselines
 
@@ -76,7 +76,7 @@ We conducted 3 experiments to evaluate the efficiency of our approach, comparing
 
 #### results:
 
-The results of metrics of our approach and other 2 baselines are presented in the table below:
+The results of metrics of GenDice and other 2 baselines are presented in the table below:
 
 |           |                 |       GenDice | Baseline1 |  Baseline2 |
 | :-------: | :-------------: | ------------: | --------: | ---------: |
@@ -146,7 +146,7 @@ The results of metrics of different *pickTensorThreshold* values are presented i
 
 #### results:
 
-The results of metrics of our approach and other 2 baselines are presented in the table below:
+The results of metrics of GenDice and other 2 baselines are presented in the table below:
 
 |           |                 |       GenDice |  Baseline1 | Baseline2 |
 | :-------: | :-------------: | ------------: | ---------: | --------: |
@@ -192,7 +192,7 @@ The distributions of different operators in GenDice and two baselines are shown 
 
 We found that Baseline 1 fails to generate any model of size 100 in the duration of 15 minutes. So results for  Baseline 1 are replaced by 'timeout'.
 
-The results of metrics of our approach and other 2 baselines are presented in the table below:
+The results of metrics of GenDice and other 2 baselines are presented in the table below:
 
 |                 |                 |       GenDice | Baseline1 | Baseline2 |
 | :-------------: | :-------------: | ------------: | --------: | --------: |

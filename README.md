@@ -99,7 +99,7 @@ In order to better model those constraints from operations, we categorize the op
 |   45   |    ReduceL2     |         *shape-changing*         |                        axes, keepdims                        |
 |   46   | ReduceLogSumExp |         *shape-changing*         |                        axes, keepdims                        |
 
-The first type is called *identity* operation (e.g., `Absolute`} operation, `Exponential` operation). It means that the shape of the input tensor is the same as the shape of the output tensor. For example, `Softmax` operation will take a single tensor and an integer parameter as the input. The integer parameter is named  $axis$ which defines the dimension that `Softmax` operation will be performed on. 
+The first type is called *identity* operation (e.g., `Absolute` operation, `Exponential` operation). It means that the shape of the input tensor is the same as the shape of the output tensor. For example, `Softmax` operation will take a single tensor and an integer parameter as the input. The integer parameter is named  $axis$ which defines the dimension that `Softmax` operation will be performed on. 
 
 The second type is *multi-inputs* operation (e.g., `Add` operation, `Sub` operation). It means that the input of the operation requires multiple tensors. For example, `Add` operation takes two or more tensors as input and performs element-wise binary addition with them. We use $a_i$ to denote the length of i-th dimension in tensor $A$, and take two tensors as the input as the example:
 $$

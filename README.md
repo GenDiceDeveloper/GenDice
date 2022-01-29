@@ -101,20 +101,37 @@ In order to better model those constraints from operations, we categorize the op
 The first type is called *identity* operation (e.g., `Absolute` operation, `Exponential` operation). It means that the shape of the input tensor is the same as the shape of the output tensor. For example, `Softmax` operation will take a single tensor and an integer parameter as the input. The integer parameter is named ![](http://latex.codecogs.com/svg.latex?axis) which defines the dimension that `Softmax` operation will be performed on. 
 
 The second type is *multi-inputs* operation (e.g., `Add` operation, `Sub` operation). It means that the input of the operation requires multiple tensors. For example, `Add` operation takes two or more tensors as input and performs element-wise binary addition with them. We use ![](http://latex.codecogs.com/svg.latex?a_i) to denote the length of i-th dimension in tensor ![](http://latex.codecogs.com/svg.latex?A), and take two tensors as the input as the example:
-![](http://latex.codecogs.com/svg.latex?C_{i_1, i_2, ... i_n} = A_{i_1, i_2, ... i_n} + B_{i_1, i_2, ... i_n}, \forall i_1 \in [1, a_1], ..., i_n \in [1, a_n])
-The mathematic expression of addition naturally implies a semantic constraint between the inputs: the shape of tensor ![](http://latex.codecogs.com/svg.latex?A), ![](http://latex.codecogs.com/svg.latex?B), and ![](http://latex.codecogs.com/svg.latex?C) should be same (![](http://latex.codecogs.com/svg.latex?dim(A)) denotes the dimension of tensor ![](http://latex.codecogs.com/svg.latex?A)):
-![](http://latex.codecogs.com/svg.latex?dim(A) = dim(B) = dim(C)\ and\ a_i = b_i = c_i, \forall i \in [1, dim(A)])
-The third type is *shape-changing* operations (e.g., `ReduceMax` operation, `Pooling` operation, `Conv` operation. The shape of output tensors will change along with input tensors. Take the `Concat` operation as an example, it takes a list of tensors into a single tensor with a parameter axis that defines the dimension to concatenate on (also take two tensors as input as the example):
-![](http://latex.codecogs.com/svg.latex?C_{i_1, i_2, i_{axis-1}, k, i_{axis+1} ... i_n} = A_{i_1, i_2, i_{axis-1}, k, i_{axis+1} ... i_n}, \forall k \in [1, a_{axis}])
 
-![](http://latex.codecogs.com/svg.latex?C_{i_1, i_2, i_{axis-1}, k, i_{axis+1} ... i_n} = B_{i_1, i_2, i_{axis-1}, k - a_{axis}, i_{axis+1} ... i_n}, otherwise)
+
+![](http://latex.codecogs.com/svg.latex?C_{i_1,i_2,...i_n}=A_{i_1,i_2,...i_n}+B_{i_1,i_2,...i_n},\forall{i_1\in[1,a_1],...,i_n\in[1,a_n]})
+
+
+The mathematic expression of addition naturally implies a semantic constraint between the inputs: the shape of tensor ![](http://latex.codecogs.com/svg.latex?A), ![](http://latex.codecogs.com/svg.latex?B), and ![](http://latex.codecogs.com/svg.latex?C) should be same (![](http://latex.codecogs.com/svg.latex?\dim(A)) denotes the dimension of tensor ![](http://latex.codecogs.com/svg.latex?A)):
+
+
+![](http://latex.codecogs.com/svg.latex?dim(A)=dim(B)=dim(C)) and ![](http://latex.codecogs.com/svg.latex?{a_i=b_i=c_i},\forall{i\in[1,dim(A)]})
+
+
+The third type is *shape-changing* operations (e.g., `ReduceMax` operation, `Pooling` operation, `Conv` operation. The shape of output tensors will change along with input tensors. Take the `Concat` operation as an example, it takes a list of tensors into a single tensor with a parameter axis that defines the dimension to concatenate on (also take two tensors as input as the example):
+
+
+![](http://latex.codecogs.com/svg.latex?C_{i_1,i_2,i_{axis-1},k,i_{axis+1}...i_n}=A_{i_1,i_2,i_{axis-1},k,i_{axis+1}...i_n},\forall{k\in[1,a_{axis}]})
+
+
+
+![](http://latex.codecogs.com/svg.latex?C_{i_1,i_2,i_{axis-1},k,i_{axis+1}...i_n}=B_{i_1,i_2,i_{axis-1},k-a_{axis},i_{axis+1}...i_n},otherwise)
+
 
 The specification of `Concat` operation is as follows: all input tensors will have the same shape, except for the length of axis-th dimension; and for the axis-th dimension which input tensors concatenate on, the output tensor's length of that dimension will equal to the sum of input tensors':
-![](http://latex.codecogs.com/svg.latex?dim(A) = dim(B) = dim(C))
 
-![](http://latex.codecogs.com/svg.latex?c_i = a_i = b_i, \forall i \in [1, dim(A)] \ and\ i \neq axis)
 
-![](http://latex.codecogs.com/svg.latex?c_i = a_i + b_i, i = axis)
+![](http://latex.codecogs.com/svg.latex?dim(A)=dim(B)=dim(C))
+
+
+![](http://latex.codecogs.com/svg.latex?c_i=a_i=b_i,\forall{i\in[1,dim(A)]},{i\neq{axis}})
+
+
+![](http://latex.codecogs.com/svg.latex?c_i=a_i+b_i,i=axis)
 
 
 
@@ -318,21 +335,21 @@ The table below contains bugs we have detected on TVM and ONNX Runtime.
 
 For the details of the bugs, please check *bugs.zip*.
 
-#1 (duplicate with #2) It is an error bug on the backend. There is a pass named DynamicToStatic which should not be defined at level 3. It will lead the internal error when the deep learning model contains operations such as MatMul, Dropout. After our reporting, developers reordered dynamic to static and simplify inference, lower DynamicToStatic optimization level to fix it.
+**#1 (duplicate with #2)** It is an error bug on the backend. There is a pass named DynamicToStatic which should not be defined at level 3. It will lead the internal error when the deep learning model contains operations such as MatMul, Dropout. After our reporting, developers reordered dynamic to static and simplify inference, lower DynamicToStatic optimization level to fix it.
 
-#3 (duplicate with #4) It is an error bug on the frontend. The developer from TVM has explained the cause of the bug and fixed it: “It’s due to a bad assumption made in PRelu conversion about the input layout......Our current PRelu converter assumes that incoming data is in NCHW format and that the slope will have C total elements. Neither of these are actual requirements for ONNX PReLu.”
+**#3 (duplicate with #4)** It is an error bug on the frontend. The developer from TVM has explained the cause of the bug and fixed it: “It’s due to a bad assumption made in PRelu conversion about the input layout......Our current PRelu converter assumes that incoming data is in NCHW format and that the slope will have C total elements. Neither of these are actual requirements for ONNX PReLu.”
 
-#5 and #6 These are error bugs on the frontend. It is because that the parameters of operations in ONNX allow default value while this is not supported in TVM.
+**#5 and #6** These are error bugs on the frontend. It is because that the parameters of operations in ONNX allow default value while this is not supported in TVM.
 
-#7 It is an error bug on the backend. This bug is related to Gemm operator. It catches an edge case of the Relay’s type checker (Relay is the intermediate representation of TVM).
+**#7** It is an error bug on the backend. This bug is related to Gemm operator. It catches an edge case of the Relay’s type checker (Relay is the intermediate representation of TVM).
 
-#8 It is an error bug on the frontend. It is because that the matrix C in Gemm operation can be optional by ONNX specification but the TVM doesn’t allow that behavior.
+**#8** It is an error bug on the frontend. It is because that the matrix C in Gemm operation can be optional by ONNX specification but the TVM doesn’t allow that behavior.
 
-#9 and #10 These are error bugs on the frontend due to the inconsistent specifications between different ONNX versions on some of operations, causing the error on TVM’s frontend.
+**#9 and #10** These are error bugs on the frontend due to the inconsistent specifications between different ONNX versions on some of operations, causing the error on TVM’s frontend.
 
-#11 This is a wrong-result bug on the backend. The result is inconsistent between TVM and ONNX Runtime on a generated model containing Flatten and ReduceL1 operation. This bug has not been confirmed by developers yet.
+**#11** This is a wrong-result bug on the backend. The result is inconsistent between TVM and ONNX Runtime on a generated model containing Flatten and ReduceL1 operation. This bug has not been confirmed by developers yet.
 
-#12 This is a wrong-result bug on the backend. The way of LpPool operation’ calculation in ONNX Runtime is inconsistent with many other deep learning engines like TVM, PyTorch.
+**#12** This is a wrong-result bug on the backend. The way of LpPool operation’ calculation in ONNX Runtime is inconsistent with many other deep learning engines like TVM, PyTorch.
 
 ### Bugs on the compiler named AnonymousX.
 
@@ -340,16 +357,16 @@ Besides two opensource deep learning compilers, we also conduct GenDice on a com
 
 It turns out 7 bugs, the details are listed as follows. We do not provide with the reproducible package for bugs on the compiler named AnonymousX due to the reason of anonymous reviewing.
 
-#1 It is an error bug on the frontend. Compiler does not support that the weight tensor of 𝐶𝑜𝑛𝑣 operation is an input tensor. Developer do not fix this bug due to the reason that they suppose users take this parameter as a constant because this parameter usually does not change after deployment.
+**#1** It is an error bug on the frontend. Compiler does not support that the weight tensor of 𝐶𝑜𝑛𝑣 operation is an input tensor. Developer do not fix this bug due to the reason that they suppose users take this parameter as a constant because this parameter usually does not change after deployment.
 
-#2 It is an error bug on the backend. If the inputs of 𝑀𝑒𝑎𝑛 operation are the same tensor, then the calculation of mean operation will throw exception due to the naming error. It has already been fixed by developers.
+**#2** It is an error bug on the backend. If the inputs of 𝑀𝑒𝑎𝑛 operation are the same tensor, then the calculation of mean operation will throw exception due to the naming error. It has already been fixed by developers.
 
-#3 It is an error bug on the backend. 𝑅𝑒𝑑𝑢𝑐𝑒𝑃𝑟𝑜𝑑 operation will register a buffer, but buffer size has not been assigned which leads to the incorrect parameters in calculation and further causes the final result wrong. It has already been fixed by developers.
+**#3** It is an error bug on the backend. 𝑅𝑒𝑑𝑢𝑐𝑒𝑃𝑟𝑜𝑑 operation will register a buffer, but buffer size has not been assigned which leads to the incorrect parameters in calculation and further causes the final result wrong. It has already been fixed by developers.
 
-#4 It is an error bug on the frontend. Compiler frontend does not parse correctly for 𝑃𝑜𝑜𝑙𝑖𝑛𝑔 operation. It has already been fixed by developers.
+**#4** It is an error bug on the frontend. Compiler frontend does not parse correctly for 𝑃𝑜𝑜𝑙𝑖𝑛𝑔 operation. It has already been fixed by developers.
 
-#5 It is an error bug on the backend. ONNX standard has changed after version 13. The compiler only implements old version and is not compatible with latest standard. It has already been fixed by developers.
+**#5** It is an error bug on the backend. ONNX standard has changed after version 13. The compiler only implements old version and is not compatible with latest standard. It has already been fixed by developers.
 
-#6 It is an error bug on the backend. Compiler assumes the second input of 𝑃𝑅𝑒𝑙𝑢 holds a specific shape which is not consistent with ONNX standard.
+**#6** It is an error bug on the backend. Compiler assumes the second input of 𝑃𝑅𝑒𝑙𝑢 holds a specific shape which is not consistent with ONNX standard.
 
-#7 It is a wrong-result bug on the backend. Compiler backend incorrectly covers the input data for the calculation on 𝐶𝑜𝑠 operation. It has already been fixed by developers.
+**#7** It is a wrong-result bug on the backend. Compiler backend incorrectly covers the input data for the calculation on 𝐶𝑜𝑠 operation. It has already been fixed by developers.

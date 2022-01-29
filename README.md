@@ -2,7 +2,7 @@
 
 Source code and other supplemental materials  for "GenDice:  Efficient Test Generation for Deep Learning Compilers". 
 
-
+![1](http://latex.codecogs.com/svg.latex?\int_a^bf(x)\ dx)
 
 ## Requirements
 

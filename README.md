@@ -66,7 +66,7 @@ To better present the efficiency of our generated models, we draw different metr
 
 We conducted 3 experiments to evaluate the efficiency of GenDice, comparing with two baselines. Also, we run 1 experiment to compare the results of different values of the parameter *pickTensorThreshold*. 
 
-**baselines**: The first baseline is purely random generation, whose relative results have a name of 'purerand'. The second baseline is also based on random generation but with incremental generation, whose relative results have a name of 'withinc'/'winc'. The results of GenDice have a name of 'dice'.
+**baselines**: The first baseline is purely random generation, also called 'whole generation with checking', whose relative results have a name of 'purerand'. The second baseline is also based on random generation but with incremental generation, called 'incremental construction by checking', whose relative results have a name of 'withinc'/'winc'. The results of GenDice have a name of 'dice'.
 
 **common settings**: For each of the experiments, we set a fixed time limitation as 15 minutes and run GenDice and baselines (or other settings of *pickTensorThreshold*) separately. We measure the results based on the metrics we raised. 
 

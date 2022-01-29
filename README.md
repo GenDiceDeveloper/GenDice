@@ -14,7 +14,6 @@ Source code and other supplemental materials  for "GenDice:  Efficient Test Gene
 - netron==5.1.4
 - xlwt==1.3.0
 
-
 For the installation of **tvm**, please see [here](https://github.com/apache/tvm). 
 
 
@@ -40,6 +39,97 @@ python table.py --interval time_interval --total total_time --ispk (1 for experi
 # python table.py --interval 30 --total 900 --ispk 1 --paths result_dice_e --types dice --case _1_30_0.5 _1_30_0.8 _1_30_0.9 _1_30_0.95 _1_30_0.98 _1_30_0.99 --iter 5
 
 ```
+
+
+
+## Semantic Specification of Deep Learning Models
+
+In deep learning, a computation graph is defined as a directed graph that comprises nodes and edges. Each node denotes a mathematical operation. Each edge describes a tensor that gets transferred between nodes. Computation graph is a suitable level of representation for deep learning model, considering that APIs are too high-level and hardware languages are too low-level.
+
+Nodes on computation graph define mathematical operations on their related edges which are the input and output tensor(s) of the operation. Explicit forms of arithmetical expression of operations indicate the semantic specification of the operation (i.e., the constraints between the attributes of tensors).
+
+In order to better model those constraints from operations, we categorize the operations into three types and describe their features respectively, as shown in the table below. Some of the operations may belong to more than one category. 
+
+| Number | Operation Name  |               Type               |                          Parameters                          |
+| :----: | :-------------: | :------------------------------: | :----------------------------------------------------------: |
+|   1    |    Identity     |            *identity*            |                             None                             |
+|   2    |       Abs       |            *identity*            |                             None                             |
+|   3    |       Neg       |            *identity*            |                             None                             |
+|   4    |   Reciprocal    |            *identity*            |                             None                             |
+|   5    |      Floor      |            *identity*            |                             None                             |
+|   6    |      Ceil       |            *identity*            |                             None                             |
+|   7    |      Round      |            *identity*            |                             None                             |
+|   8    |       Erf       |            *identity*            |                             None                             |
+|   9    |      Sign       |            *identity*            |                             None                             |
+|   10   |       Exp       |            *identity*            |                             None                             |
+|   11   |    Softsign     |            *identity*            |                             None                             |
+|   12   |     Softmax     |            *identity*            |                             axis                             |
+|   13   |     Sigmoid     |            *identity*            |                             None                             |
+|   14   |   HardSigmoid   |            *identity*            |                         alpha, beta                          |
+|   15   |      Relu       |            *identity*            |                             None                             |
+|   16   |    LeakyRelu    |            *identity*            |                            alpha                             |
+|   17   |      Selu       |            *identity*            |                         alpha, gamma                         |
+|   18   |       Sin       |            *identity*            |                             None                             |
+|   19   |       Cos       |            *identity*            |                             None                             |
+|   20   |      Sqrt       |            *identity*            |                             None                             |
+|   21   |      PRelu      |          *multi-inputs*          |                             None                             |
+|   22   |     Flatten     |          *multi-inputs*          |                             axis                             |
+|   23   |       Add       |          *multi-inputs*          |                             None                             |
+|   24   |       Sub       |          *multi-inputs*          |                             None                             |
+|   25   |       Mul       |          *multi-inputs*          |                             None                             |
+|   26   |       Div       |          *multi-inputs*          |                             None                             |
+|   27   |       Sum       |          *multi-inputs*          |                             None                             |
+|   28   |       Max       |          *multi-inputs*          |                             None                             |
+|   29   |       Min       |          *multi-inputs*          |                             None                             |
+|   30   |      Mean       |          *multi-inputs*          |                             None                             |
+|   31   |     MaxPool     |          *multi-inputs*          | auto\_pad, ceil\_mode, dilations, kernel\_shape, pads, storage\_order, strides |
+|   32   |   AveragePool   |          *multi-inputs*          | auto\_pad, ceil\_mode, count\_include\_pad, dilations, kernel\_shape, pads, strides |
+|   33   |     LpPool      |          *multi-inputs*          |          auto\_pad, kernel\_shape, p, pads, strides          |
+|   34   |      Conv       |          *multi-inputs*          |  auto\_pad, dilations, group, kernel\_shape, pads, strides   |
+|   35   |     MatMul      |          *multi-inputs*          |                             None                             |
+|   36   |      Gemm       |          *multi-inputs*          |                 alpha, beta, transA, transB                  |
+|   37   |     Concat      | *multi-inputs*, *shape-changing* |                             axis                             |
+|   38   |  SpaceToDepth   |         *shape-changing*         |                       blocksize, mode                        |
+|   39   |    ReduceMax    |         *shape-changing*         |                        axes, keepdims                        |
+|   40   |   ReduceMean    |         *shape-changing*         |                        axes, keepdims                        |
+|   41   |    ReduceMin    |         *shape-changing*         |                        axes, keepdims                        |
+|   42   |   ReduceProd    |         *shape-changing*         |                        axes, keepdims                        |
+|   43   | ReduceSumSquare |         *shape-changing*         |                        axes, keepdims                        |
+|   44   |    ReduceL1     |         *shape-changing*         |                        axes, keepdims                        |
+|   45   |    ReduceL2     |         *shape-changing*         |                        axes, keepdims                        |
+|   46   | ReduceLogSumExp |         *shape-changing*         |                        axes, keepdims                        |
+
+The first type is called *identity* operation (e.g., `Absolute`} operation, `Exponential` operation). It means that the shape of the input tensor is the same as the shape of the output tensor. For example, `Softmax` operation will take a single tensor and an integer parameter as the input. The integer parameter is named  $axis$ which defines the dimension that `Softmax` operation will be performed on. 
+
+The second type is *multi-inputs* operation (e.g., `Add` operation, `Sub` operation). It means that the input of the operation requires multiple tensors. For example, `Add` operation takes two or more tensors as input and performs element-wise binary addition with them. We use $a_i$ to denote the length of i-th dimension in tensor $A$, and take two tensors as the input as the example:
+$$
+C_{i_1, i_2, ... i_n} = A_{i_1, i_2, ... i_n} + B_{i_1, i_2, ... i_n}, \forall i_1 \in [1, a_1], ..., i_n \in [1, a_n]
+$$
+The mathematic expression of addition naturally implies a semantic constraint between the inputs: the shape of tensor $A$, $B$, and $C$ should be same ($dim(A)$ denotes the dimension of tensor $A$):
+$$
+dim(A) = dim(B) = dim(C)\ and\ a_i = b_i = c_i, \forall i \in [1, dim(A)]
+$$
+The third type is *shape-changing* operations (e.g., `ReduceMax` operation, `Pooling` operation, `Conv` operation. The shape of output tensors will change along with input tensors. Take the `Concat` operation as an example, it takes a list of tensors into a single tensor with a parameter axis that defines the dimension to concatenate on (also take two tensors as input as the example):
+$$
+C_{i_1, i_2, i_{axis-1}, k, i_{axis+1} ... i_n} = A_{i_1, i_2, i_{axis-1}, k, i_{axis+1} ... i_n}, \forall k \in [1, a_{axis}]
+$$
+
+$$
+C_{i_1, i_2, i_{axis-1}, k, i_{axis+1} ... i_n} = B_{i_1, i_2, i_{axis-1}, k - a_{axis}, i_{axis+1} ... i_n}, otherwise
+$$
+
+The specification of `Concat` operation is as follows: all input tensors will have the same shape, except for the length of axis-th dimension; and for the axis-th dimension which input tensors concatenate on, the output tensor's length of that dimension will equal to the sum of input tensors':
+$$
+dim(A) = dim(B) = dim(C)
+$$
+
+$$
+c_i = a_i = b_i, \forall i \in [1, dim(A)] \ and\ i \neq axis
+$$
+
+$$
+c_i = a_i + b_i, i = axis 
+$$
 
 
 

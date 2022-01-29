@@ -100,35 +100,21 @@ In order to better model those constraints from operations, we categorize the op
 
 The first type is called *identity* operation (e.g., `Absolute` operation, `Exponential` operation). It means that the shape of the input tensor is the same as the shape of the output tensor. For example, `Softmax` operation will take a single tensor and an integer parameter as the input. The integer parameter is named ![](http://latex.codecogs.com/svg.latex?axis) which defines the dimension that `Softmax` operation will be performed on. 
 
-The second type is *multi-inputs* operation (e.g., `Add` operation, `Sub` operation). It means that the input of the operation requires multiple tensors. For example, `Add` operation takes two or more tensors as input and performs element-wise binary addition with them. We use $a_i$ to denote the length of i-th dimension in tensor $A$, and take two tensors as the input as the example:
-$$
-C_{i_1, i_2, ... i_n} = A_{i_1, i_2, ... i_n} + B_{i_1, i_2, ... i_n}, \forall i_1 \in [1, a_1], ..., i_n \in [1, a_n]
-$$
-The mathematic expression of addition naturally implies a semantic constraint between the inputs: the shape of tensor $A$, $B$, and $C$ should be same ($dim(A)$ denotes the dimension of tensor $A$):
-$$
-dim(A) = dim(B) = dim(C)\ and\ a_i = b_i = c_i, \forall i \in [1, dim(A)]
-$$
+The second type is *multi-inputs* operation (e.g., `Add` operation, `Sub` operation). It means that the input of the operation requires multiple tensors. For example, `Add` operation takes two or more tensors as input and performs element-wise binary addition with them. We use ![](http://latex.codecogs.com/svg.latex?a_i) to denote the length of i-th dimension in tensor ![](http://latex.codecogs.com/svg.latex?A), and take two tensors as the input as the example:
+![](http://latex.codecogs.com/svg.latex?C_{i_1, i_2, ... i_n} = A_{i_1, i_2, ... i_n} + B_{i_1, i_2, ... i_n}, \forall i_1 \in [1, a_1], ..., i_n \in [1, a_n])
+The mathematic expression of addition naturally implies a semantic constraint between the inputs: the shape of tensor ![](http://latex.codecogs.com/svg.latex?A), ![](http://latex.codecogs.com/svg.latex?B), and ![](http://latex.codecogs.com/svg.latex?C) should be same (![](http://latex.codecogs.com/svg.latex?dim(A)) denotes the dimension of tensor ![](http://latex.codecogs.com/svg.latex?A)):
+![](http://latex.codecogs.com/svg.latex?dim(A) = dim(B) = dim(C)\ and\ a_i = b_i = c_i, \forall i \in [1, dim(A)])
 The third type is *shape-changing* operations (e.g., `ReduceMax` operation, `Pooling` operation, `Conv` operation. The shape of output tensors will change along with input tensors. Take the `Concat` operation as an example, it takes a list of tensors into a single tensor with a parameter axis that defines the dimension to concatenate on (also take two tensors as input as the example):
-$$
-C_{i_1, i_2, i_{axis-1}, k, i_{axis+1} ... i_n} = A_{i_1, i_2, i_{axis-1}, k, i_{axis+1} ... i_n}, \forall k \in [1, a_{axis}]
-$$
+![](http://latex.codecogs.com/svg.latex?C_{i_1, i_2, i_{axis-1}, k, i_{axis+1} ... i_n} = A_{i_1, i_2, i_{axis-1}, k, i_{axis+1} ... i_n}, \forall k \in [1, a_{axis}])
 
-$$
-C_{i_1, i_2, i_{axis-1}, k, i_{axis+1} ... i_n} = B_{i_1, i_2, i_{axis-1}, k - a_{axis}, i_{axis+1} ... i_n}, otherwise
-$$
+![](http://latex.codecogs.com/svg.latex?C_{i_1, i_2, i_{axis-1}, k, i_{axis+1} ... i_n} = B_{i_1, i_2, i_{axis-1}, k - a_{axis}, i_{axis+1} ... i_n}, otherwise)
 
 The specification of `Concat` operation is as follows: all input tensors will have the same shape, except for the length of axis-th dimension; and for the axis-th dimension which input tensors concatenate on, the output tensor's length of that dimension will equal to the sum of input tensors':
-$$
-dim(A) = dim(B) = dim(C)
-$$
+![](http://latex.codecogs.com/svg.latex?dim(A) = dim(B) = dim(C))
 
-$$
-c_i = a_i = b_i, \forall i \in [1, dim(A)] \ and\ i \neq axis
-$$
+![](http://latex.codecogs.com/svg.latex?c_i = a_i = b_i, \forall i \in [1, dim(A)] \ and\ i \neq axis)
 
-$$
-c_i = a_i + b_i, i = axis 
-$$
+![](http://latex.codecogs.com/svg.latex?c_i = a_i + b_i, i = axis)
 
 
 

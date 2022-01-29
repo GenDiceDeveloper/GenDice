@@ -322,7 +322,49 @@ The distributions of different operators in GenDice and two baselines are shown 
 
 The table below contains bugs we have detected.
 
+All of the bugs are listed and discussed in this section.
+
+### Bugs on TVM/ONNX Runtime.
+After finding bugs on TVM and ONNX Runtime, we reported them to the corresponding compiler developers. 
+
+The table below contains bugs we have detected on TVM and ONNX Runtime.
+
 ![bugs](./imgs/bugs.png)
 
 For the details of the bugs, please check *bugs.zip*.
 
+#1 (duplicate with #2) It is an error bug on the backend. There is a pass named DynamicToStatic which should not be defined at level 3. It will lead the internal error when the deep learning model contains operations such as MatMul, Dropout. After our reporting, developers reordered dynamic to static and simplify inference, lower DynamicToStatic optimization level to fix it.
+
+#3 (duplicate with #4) It is an error bug on the frontend. The developer from TVM has explained the cause of the bug and fixed it: “It’s due to a bad assumption made in PRelu conversion about the input layout......Our current PRelu converter assumes that incoming data is in NCHW format and that the slope will have C total elements. Neither of these are actual requirements for ONNX PReLu.”
+
+#5 and #6 These are error bugs on the frontend. It is because that the parameters of operations in ONNX allow default value while this is not supported in TVM.
+
+#7 It is an error bug on the backend. This bug is related to Gemm operator. It catches an edge case of the Relay’s type checker (Relay is the intermediate representation of TVM).
+
+#8 It is an error bug on the frontend. It is because that the matrix C in Gemm operation can be optional by ONNX specification but the TVM doesn’t allow that behavior.
+
+#9 and #10 These are error bugs on the frontend due to the inconsistent specifications between different ONNX versions on some of operations, causing the error on TVM’s frontend.
+
+#11 This is a wrong-result bug on the backend. The result is inconsistent between TVM and ONNX Runtime on a generated model containing Flatten and ReduceL1 operation. This bug has not been confirmed by developers yet.
+
+#12 This is a wrong-result bug on the backend. The way of LpPool operation’ calculation in ONNX Runtime is inconsistent with many other deep learning engines like TVM, PyTorch.
+
+### Bugs on the compiler named AnonymousX.
+
+Besides two opensource deep learning compilers, we also conduct GenDice on a commercial deep learning compiler from the company AnonymousX.
+
+It turns out 7 bugs, the details are listed as follows. We do not provide with the reproducible package for bugs on the compiler named AnonymousX due to the reason of anonymous reviewing.
+
+#1 It is an error bug on the frontend. Compiler does not support that the weight tensor of 𝐶𝑜𝑛𝑣 operation is an input tensor. Developer do not fix this bug due to the reason that they suppose users take this parameter as a constant because this parameter usually does not change after deployment.
+
+#2 It is an error bug on the backend. If the inputs of 𝑀𝑒𝑎𝑛 operation are the same tensor, then the calculation of mean operation will throw exception due to the naming error. It has already been fixed by developers.
+
+#3 It is an error bug on the backend. 𝑅𝑒𝑑𝑢𝑐𝑒𝑃𝑟𝑜𝑑 operation will register a buffer, but buffer size has not been assigned which leads to the incorrect parameters in calculation and further causes the final result wrong. It has already been fixed by developers.
+
+#4 It is an error bug on the frontend. Compiler frontend does not parse correctly for 𝑃𝑜𝑜𝑙𝑖𝑛𝑔 operation. It has already been fixed by developers.
+
+#5 It is an error bug on the backend. ONNX standard has changed after version 13. The compiler only implements old version and is not compatible with latest standard. It has already been fixed by developers.
+
+#6 It is an error bug on the backend. Compiler assumes the second input of 𝑃𝑅𝑒𝑙𝑢 holds a specific shape which is not consistent with ONNX standard.
+
+#7 It is a wrong-result bug on the backend. Compiler backend incorrectly covers the input data for the calculation on 𝐶𝑜𝑠 operation. It has already been fixed by developers.

@@ -564,6 +564,7 @@ while True:
 	g_m = [sum(g[i] for g in g_metrics)/len(g_metrics) for i in range(7)]
 
 	f.write('{:<10}{:<10.4f}{:<10.4f}{:<10.4f}{:<10.4f}{:<10.4f}{:<10.4f}{:<10.4f}\n'.format('I', g_m[0], g_m[1], g_m[2], g_m[3], g_m[4], g_m[5], g_m[6]))
+	f.write('\n')
 	f.close()
 	iter += 1
 

@@ -3,6 +3,10 @@ from xlwt.Worksheet import Worksheet
 import argparse
 import numpy as np
 
+# python table.py --interval time_interval --total total_time --ispk (1 for experiment with baselines; 0 for experiment of pickrate) --paths (names of files need to be processed) --types (different approaches) --case (different settings of parameters) --iter 5
+#eg: 
+# python table.py --interval 30 --total 3600 --ispk 0 --paths result_dice_e result_rand_e result_winc_e --types dice purerand winc --case _10_10_0.95 --iter 5
+# python table.py --interval 30 --total 3600 --ispk 1 --paths result_dice_e --types dice --case _1_30_0.5 _1_30_0.8 _1_30_0.9 _1_30_0.95 _1_30_0.98 _1_30_0.99 --iter 5
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--interval', type=int,  help="time_interval", default=300)
@@ -87,7 +91,11 @@ for iter, path in enumerate(paths):
 
         op_nm = lines[last*10+4].split(' ')[:-1]
         op_c = lines[last*10+5].split(' ')[:-1]
+        # try:
         op_cnts[iter][t] = [int(op_c[op_nm.index(op_names[i])]) for i in range(len(op_names))]
+        # except Exception as e:
+            # print(op_c)
+            # print(op_cnts[iter][t])
 
 op_ms = np.array(op_ms,dtype=np.float64)
 g_ms = np.array(g_ms,dtype=np.float64)

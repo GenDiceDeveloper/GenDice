@@ -22,7 +22,7 @@ For the installation of **tvm**, please see [here](https://github.com/apache/tvm
 ```
 # for GenDice generation
 timeout (time) python gen.py --minnode MINNODE --maxnode MAXNODE --pickrate pickExisRate --file (name of file that contains results) 
-# eg: timeout 900s python gen.py --minnode 1 --maxnode 30 --pickrate 0.95 --file result_dice_e{i}.txt"
+# eg: timeout 3600s python gen.py --minnode 1 --maxnode 30 --pickrate 0.95 --file result_dice_e{i}.txt"
 
 # for baseline 1 purely random generation 
 timeout (time) python gen.py --minnode MINNODE --maxnode MAXNODE --pickrate pickExisRate --file filename 
@@ -35,7 +35,7 @@ cd results
 python table.py --interval time_interval --total total_time --ispk (1 for experiment with baselines; 0 for experiment of pickrate) --paths (names of files need to be processed) --types (different approaches) --case (different settings of parameters) --iter 5
 #eg: 
 # python table.py --interval 30 --total 900 --ispk 0 --paths result_dice_e result_rand_e result_winc_e --types dice purerand winc --case _10_10_0.95 --iter 5
-# python table.py --interval 30 --total 900 --ispk 1 --paths result_dice_e --types dice --case _1_30_0.5 _1_30_0.8 _1_30_0.9 _1_30_0.95 _1_30_0.98 _1_30_0.99 --iter 5
+# python table.py --interval 30 --total 3600 --ispk 1 --paths result_dice_e --types dice --case _1_30_0.5 _1_30_0.8 _1_30_0.9 _1_30_0.95 _1_30_0.98 _1_30_0.99 --iter 5
 
 ```
 
@@ -158,9 +158,17 @@ To better present the efficiency of our generated models, we draw different metr
 
 We conducted 3 experiments to evaluate the efficiency of GenDice, comparing with two baselines. Also, we run 1 experiment to compare the results of different values of the parameter *pickTensorThreshold*. 
 
-**baselines**: The first baseline is purely random generation, also called 'whole generation with checking', whose relative results have a name of 'purerand'. The second baseline is also based on random generation but with incremental generation, called 'incremental construction by checking', whose relative results have a name of 'withinc'/'winc'. The results of GenDice have a name of 'dice'.
+**baselines**: 
 
-**common settings**: For each of the experiments, we set a fixed time limitation as 15 minutes and run GenDice and baselines (or other settings of *pickTensorThreshold*) separately. We measure the results based on the metrics we raised. 
+The first baseline is purely random generation, called **'whole checking'**, whose relative results have a name of **'purerand'**. It relies on the compiler’s running to check whether it is satisfied with semantic specifications of deep learning model only after the construction of a whole model. 
+
+The second baseline is also based on random generation but with incremental generation, called **'incremental checking'**, whose relative results have a name of **'withinc'/'winc'**. It checks whether the model satisfies the semantic specifications every time it adds a new node. 
+
+The results of **GenDice** have a name of **'dice'**.
+
+**common settings**: 
+
+For experiment #1 and #2, we set a fixed time limitation as 1 hour and for experiment #3 and #4, we set a fixed time limitation as 15 minutes. We run GenDice and the two baselines (or other settings of *pickTensorThreshold*) separately for 5 times. We measure the results based on the metrics we raised. 
 
 ### #1. Generate models of multiple sizes in a fixed time duration, compared with other baselines
 
@@ -170,23 +178,23 @@ We conducted 3 experiments to evaluate the efficiency of GenDice, comparing with
 
 The results of metrics of GenDice and other 2 baselines are presented in the table below:
 
-|           |                 |       GenDice | Baseline1 |  Baseline2 |
-| :-------: | :-------------: | ------------: | --------: | ---------: |
-|           | \# valid models |   **40819.0** |     525.6 |     6593.4 |
-|           |                 |               |           |            |
-|           |       OTC       |      **100%** |    98.70% |     96.09% |
-| operation |       IDC       |      **100%** |    97.52% |     94.61% |
-|   level   |       ODC       |   **11.2652** |    2.5739 |     3.1956 |
-|  metrics  |       SEC       |    **99.29%** |    21.42% |     57.38% |
-|           |       SPC       | **2830.8480** |   22.7739 |    81.1870 |
-|           |                 |               |           |            |
-|           |       NOO       |      15.49442 |    2.1626 |    15.5018 |
-|           |       NOT       |   **12.6814** |    2.0856 |    11.3909 |
-|   graph   |       NOP       |   **13.2941** |    1.0141 |     2.5397 |
-|   level   |       NSP       |        5.4114 |    1.2147 | **6.2904** |
-|  metrics  |       NTP       |   **25.7758** |    2.5457 |    14.3949 |
-|           |       MLP       |    **4.2735** |    1.7097 |     2.0959 |
-|           |       ALP       |    **2.7062** |    1.5170 |     1.0964 |
+|           |                 |      GenDice | Baseline1 |   Baseline2 |
+| :-------: | :-------------: | -----------: | --------: | ----------: |
+|           | \# valid models | **130537.2** |    4427.4 |       38106 |
+|           |                 |              |           |             |
+|           |       OTC       |     **100%** |  **100%** |     96.956% |
+| operation |       IDC       |     **100%** |   99.782% |     96.438% |
+|   level   |       ODC       | **12.30434** |   4.60434 |     4.03042 |
+|  metrics  |       SEC       |   **99.29%** |   73.818% |     70.038% |
+|           |       SPC       | **4717.678** |     122.4 |    186.0696 |
+|           |                 |              |           |             |
+|           |       NOO       |     15.50608 |   2.14308 |    15.50634 |
+|           |       NOT       |  **12.6876** |    2.0754 |    11.40272 |
+|   graph   |       NOP       | **13.30472** |    1.0187 |     2.54904 |
+|   level   |       NSP       |      5.41996 |   1.21438 | **6.29048** |
+|  metrics  |       NTP       | **25.74342** |   2.66026 |      14.401 |
+|           |       MLP       |  **4.27634** |   1.70184 |     2.09338 |
+|           |       ALP       |   **2.7077** |   1.50832 |     1.09786 |
 
 We also present figures of the increase of operation-level metrics over time. 
 
@@ -212,23 +220,23 @@ The distributions of different operators in GenDice and two baselines are shown 
 
 The results of metrics of different *pickTensorThreshold* values are presented in the table below:
 
-|                 |     values      |         0.5 |      0.8 |      0.9 |         0.95 |     0.98 |        0.99 |
-| :-------------: | :-------------: | ----------: | -------: | -------: | -----------: | -------: | ----------: |
-|                 | \# valid models |     37115.0 |  39281.0 |  39529.6 |  **40819.0** |  40098.2 |     40067.6 |
-|                 |                 |             |          |          |              |          |             |
-|                 |       OTC       |        100% |     100% |     100% |     **100%** |     100% |        100% |
-| operation-level |       IDC       |        100% |     100% |     100% |     **100%** |     100% |        100% |
-|     metrics     |       ODC       |      7.8043 |  10.2522 |  10.8522 |  **11.2652** |  11.3174 | **11.4652** |
-|                 |       SEC       |      99.29% |   99.29% |   99.29% |   **99.29%** |   99.29% |      99.29% |
-|                 |       SPC       |    2732.630 | 2800.143 | 2797.665 | **2830.848** | 2785.157 |    2783.222 |
-|                 |                 |             |          |          |              |          |             |
-|                 |       NOO       |     15.5131 |  15.5041 |  15.4946 |  **15.4944** |  15.4731 |     15.4972 |
-|                 |       NOT       |     12.6935 |  12.6854 |  12.6754 |  **12.6814** |  12.6619 |     12.6876 |
-|   graph-level   |       NOP       |      6.4690 |  10.8292 |  12.4428 |  **13.2941** |  13.7868 | **13.9863** |
-|     metrics     |       NSP       | **11.0360** |   7.3798 |   6.0827 |   **5.4114** |   5.0267 |      4.8915 |
-|                 |       NTP       |     20.7253 |  22.7890 |  24.5259 |  **25.7758** |  26.4883 | **26.8589** |
-|                 |       MLP       |      2.9260 |   3.7996 |   4.1091 |   **4.2735** |   4.3686 |  **4.4075** |
-|                 |       ALP       |      1.5696 |   2.2499 |   2.5440 |   **2.7062** |   2.8046 |  **2.8423** |
+|                 |     values      |          0.5 |      0.8 |      0.9 |         0.95 |     0.98 |         0.99 |
+| :-------------: | :-------------: | -----------: | -------: | -------: | -----------: | -------: | -----------: |
+|                 | \# valid models |     111297.6 | 125572.4 | 127330.2 | **130537.2** | 127104.8 |       126897 |
+|                 |                 |              |          |          |              |          |              |
+|                 |       OTC       |         100% |     100% |     100% |     **100%** |     100% |         100% |
+| operation-level |       IDC       |         100% |     100% |     100% |     **100%** |     100% |         100% |
+|     metrics     |       ODC       |      8.56522 | 11.19566 | 12.01738 | **12.30434** | 12.36524 | **12.44782** |
+|                 |       SEC       |       99.29% |   99.29% |   99.29% |   **99.29%** |   99.29% |       99.29% |
+|                 |       SPC       |     4204.926 | 4578.265 | 4655.713 | **4717.678** | 4682.752 |     4680.465 |
+|                 |                 |              |          |          |              |          |              |
+|                 |       NOO       |     15.51576 | 15.50026 | 15.50498 | **15.50608** |  15.5028 |     15.51682 |
+|                 |       NOT       |     12.69428 | 12.68558 | 12.68922 |  **12.6876** | 12.68774 | **12.69548** |
+|   graph-level   |       NOP       |      6.47186 |  10.8291 | 12.45178 | **13.30472** | 13.81482 | **14.00344** |
+|     metrics     |       NSP       | **11.04458** |  7.37808 |  6.08246 |  **5.41996** |  5.02604 |      4.89982 |
+|                 |       NTP       |     20.72918 | 22.71218 | 24.54368 | **25.74342** |  26.5563 | **26.90478** |
+|                 |       MLP       |      2.92392 |   3.8029 |  4.11508 |  **4.27634** |  4.37192 |  **4.40768** |
+|                 |       ALP       |      1.56998 |  2.25124 |  2.54606 |   **2.7077** |  2.80696 |   **2.8434** |
 
 
 

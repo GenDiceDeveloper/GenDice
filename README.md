@@ -158,15 +158,15 @@ To better present the efficiency of our generated models, we draw different metr
 
 We conducted 3 experiments to evaluate the efficiency of GenDice, comparing with two baselines. Also, we run 1 experiment to compare the results of different values of the parameter *pickTensorThreshold*. 
 
-**baselines**: 
+**Baselines**: 
 
-The first baseline is purely random generation, called **'whole checking'**, whose relative results have a name of **'purerand'**. It relies on the compiler’s running to check whether it is satisfied with semantic specifications of deep learning model only after the construction of a whole model. 
+The first baseline is purely random generation, called **'Whole Checking'**, whose relative results have a name of **'purerand'**. It relies on the compiler’s running to check whether it is satisfied with semantic specifications of deep learning model only after the construction of a whole model. 
 
-The second baseline is also based on random generation but with incremental generation, called **'incremental checking'**, whose relative results have a name of **'withinc'/'winc'**. It checks whether the model satisfies the semantic specifications every time it adds a new node. 
+The second baseline is also based on random generation but with incremental generation, called **'Incremental Checking'**, whose relative results have a name of **'withinc'/'winc'**. It checks whether the model satisfies the semantic specifications every time it adds a new node. 
 
 The results of **GenDice** have a name of **'dice'**.
 
-**common settings**: 
+**Common Settings**: 
 
 For experiment #1 and #2, we set a fixed time limitation as 1 hour and for experiment #3 and #4, we set a fixed time limitation as 15 minutes. We run GenDice and the two baselines (or other settings of *pickTensorThreshold*) separately for 5 times. We measure the results based on the metrics we raised. 
 

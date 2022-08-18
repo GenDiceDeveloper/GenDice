@@ -365,6 +365,11 @@ For the details of the bugs, please check *bugs.zip*.
 
 **#12** This is a wrong-result bug on the backend. The way of LpPool operation’ calculation in ONNX Runtime is inconsistent with many other deep learning engines like TVM, PyTorch.
 
+**#13** This is a wrong-result bug on the backend. When the input number of Sum operation is 5 and the input tensors are coincident, it will produce wrong result. This bug has been fixed in v0.8.0.
+
+**#14** This is an error bug on the backend. When a BatchNormalization operation is appended by a Add operation, TVM compiler will crash. This bug has been fixed in v0.8.0.
+
+
 ### Bugs on the compiler named AnonymousX.
 
 Besides two opensource deep learning compilers, we also conduct GenDice on a commercial deep learning compiler from the company AnonymousX.
